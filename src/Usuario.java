@@ -1,18 +1,26 @@
 
 public class Usuario {
 	//Atributos
+	private String CPF;
 	private String nome;
 	private String sexo;
 	private int idade;
 	
+	
 	//Metodo Construtor
-	public Usuario(String nome, String sexo, int idade) {
+	public Usuario(String CPF, String nome, String sexo, int idade) {
 		super();
+		this.CPF = CPF;
 		this.nome = nome;
 		this.sexo = sexo;
 		this.idade = idade;
 	}
-
+	public String getCPF() {
+		return CPF;
+	}
+	public void setCPF(String CPF) {
+		this.CPF = CPF;
+	}
 	public String getNome() {
 		return nome;
 	}
